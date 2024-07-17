@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Hitchki" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="Theme.Hitchki" parent="Base.Theme.Hitchki" />
+
+    <style
+        name="AppTheme"
+        parent="ThemeOverlay.Material3.DynamicColors.DayNight">
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.Hitchki</item>
+    </style>
+</resources>
